@@ -1,0 +1,4 @@
+
+**functions/get_files_info:**
+[x] fix bug "pkg" is not a directory
+[x] fix directory content being printed
