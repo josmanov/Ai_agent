@@ -2,3 +2,7 @@
 **functions/get_files_info:**
 [x] fix bug "pkg" is not a directory
 [x] fix directory content being printed
+
+**functions/write_file:**
+[ ] Bug: Fix file generated in wrong directory.
+    - Creates new directory in wrong path
