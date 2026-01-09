@@ -4,5 +4,5 @@
 [x] fix directory content being printed
 
 **functions/write_file:**
-[ ] Bug: Fix file generated in wrong directory.
+[x] Bug: Fix file generated in wrong directory.
     - Creates new directory in wrong path

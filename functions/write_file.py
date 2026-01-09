@@ -14,14 +14,12 @@ def write_file(working_directory, file_path, content):
 
     while (1):
         try:
-            os.makedirs(os.path.dirname(file_path), exist_ok=True)
-            print("File doesn't exist. Creating file...")
-            f.write(content)
-            print(f'Successfully wrote to "{os.path.dirname(file_path)}" ({len(content)} characters written)')
-            break
-        except:
-            return ("File exists")
-        with open(os.path.dirname(file_path), "w") as f:
-            f.write(content)
-            print(f'Successfully wrote to "{os.path.dirname(file_path)}" ({len(content)} characters written)')
+            # Fixed bug. Used target_dir for the path of the file.
+            os.path.exists(target_dir)
+            with open(target_dir, "w") as f:
+                f.write(content)
+            print(f'Successfully wrote to "{file_path}" ({len(content)} characters written)')
             return
+        except:
+            print("Error: Couldn't write into file")
+            
